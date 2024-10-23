@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root{
+  --background-color: #696969;
+  --product-color: #f8f8f8;
+  --border-color: #BEBFC5;
+  --header-color: #7FFFD4
+}
+
+body{
+  width: 100%;
+  height: auto;
+  background-color: var(--background-color);
+}
+
+.header{
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  background-color: var(--header-color);
+  padding: 2rem;
+}
+
+.card-body{
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  background-color: var(--product-color);
+  border-bottom: 1px solid var(--border-color);
+  align-items: start;
+  transition: background-color 0.5s ease-in-out
+}
+
+.card-body:hover{
+  background-color: rgb(127, 255, 212, 0.3);
+}
+
+.img{
+  width: 8rem;
+  height: 100px;
+  border-radius: 1rem;
+  border: 2px solid var(--header-color);
+}
+
+.text-body{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.text-body > h1{
+  font-size: 1.5rem;
+}
+
+.text-body > p{
+  font-size: 0.8rem;
+  color: #696969;
+}
+
+.text-body > h3{
+  font-size: 1rem;
+  color: red;
+}
+
